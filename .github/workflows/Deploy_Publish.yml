@@ -11,9 +11,7 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-              python-version: 3.x
+
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial
         # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
